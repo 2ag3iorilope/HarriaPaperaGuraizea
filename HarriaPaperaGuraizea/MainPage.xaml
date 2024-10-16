@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="HarriaPaperaGuraizea.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="Piedra, Papel o Tijera">
+
+    <StackLayout Padding="20">
+        <Label
+            FontSize="24"
+            HorizontalOptions="Center"
+            Text="Elige una opción:" />
+
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Image
+                GestureRecognizers="{TapGestureRecognizer Tapped='OnPlayerChoiceTapped'}"
+                HeightRequest="100"
+                Source="piedra.png"
+                WidthRequest="100" />
+            <Image
+                GestureRecognizers="{TapGestureRecognizer Tapped='OnPlayerChoiceTapped'}"
+                HeightRequest="100"
+                Source="eskua.png"
+                WidthRequest="100" />
+            <Image
+                GestureRecognizers="{TapGestureRecognizer Tapped='OnPlayerChoiceTapped'}"
+                HeightRequest="100"
+                Source="tijera.png"
+                WidthRequest="100" />
+        </StackLayout>
+
+        <Label
+            FontSize="24"
+            HorizontalOptions="Center"
+            Text="Elección del ordenador:" />
+
+        <!--  Control Image para mostrar la elección del ordenador  -->
+        <Image
+            x:Name="ComputerChoiceImage"
+            HeightRequest="100"
+            HorizontalOptions="Center"
+            WidthRequest="100" />
+
+        <Label
+            x:Name="PlayerScoreLabel"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Puntos Jugador: 0" />
+        <Label
+            x:Name="ComputerScoreLabel"
+            FontSize="20"
+            HorizontalOptions="Center"
+            Text="Puntos Ordenador: 0" />
+
+        <Button
+            Clicked="OnFinishButtonClicked"
+            HorizontalOptions="Center"
+            Text="Finalizar" />
+    </StackLayout>
+</ContentPage>
