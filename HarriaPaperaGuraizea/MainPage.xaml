@@ -9,7 +9,7 @@
         <Label
             FontSize="24"
             HorizontalOptions="Center"
-            Text="Elige una opción:" />
+            Text="Egin zure aukera:" />
 
         <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
             <Image
@@ -32,9 +32,9 @@
         <Label
             FontSize="24"
             HorizontalOptions="Center"
-            Text="Elección del ordenador:" />
+            Text="Ordenagailuaren Aukera:" />
 
-        <!--  Control Image para mostrar la elección del ordenador  -->
+     
         <Image
             x:Name="ComputerChoiceImage"
             HeightRequest="100"
@@ -45,16 +45,16 @@
             x:Name="PlayerScoreLabel"
             FontSize="20"
             HorizontalOptions="Center"
-            Text="Puntos Jugador: 0" />
+            Text="Erabiltzailearen puntuak: 0" />
         <Label
             x:Name="ComputerScoreLabel"
             FontSize="20"
             HorizontalOptions="Center"
-            Text="Puntos Ordenador: 0" />
+            Text="Ordenagailuaren Puntuak: 0" />
 
         <Button
             Clicked="OnFinishButtonClicked"
             HorizontalOptions="Center"
-            Text="Finalizar" />
+            Text="Amaitu" />
     </StackLayout>
 </ContentPage>

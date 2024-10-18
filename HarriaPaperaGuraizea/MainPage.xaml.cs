@@ -84,7 +84,7 @@ namespace HarriaPaperaGuraizea
 
         private void OnFinishButtonClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new ContentPage { Content = new Label { Text = "Jokoa Amaitu Da Agur!" } };
+            Application.Current!.MainPage = new ContentPage { Content = new Label { Text = "Jokoa Amaitu Da Agur!" } };
         }
     }
 }
