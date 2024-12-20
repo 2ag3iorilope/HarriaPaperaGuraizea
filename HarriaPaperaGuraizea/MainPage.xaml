@@ -6,11 +6,13 @@
     Title="Piedra, Papel o Tijera">
 
     <StackLayout Padding="20">
+        <!--  Erabiltzaileari bere aukera egiteko esateko etiketa  -->
         <Label
             FontSize="24"
             HorizontalOptions="Center"
             Text="Egin zure aukera:" />
 
+        <!--  Erabiltzailearen aukerak erakusten dituzten irudiak (piedra, papera, guraizea)  -->
         <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
             <Image
                 GestureRecognizers="{TapGestureRecognizer Tapped='OnPlayerChoiceTapped'}"
@@ -29,29 +31,33 @@
                 WidthRequest="100" />
         </StackLayout>
 
+        <!--  Ordenagailuaren aukera erakusteko etiketa  -->
         <Label
             FontSize="24"
             HorizontalOptions="Center"
             Text="Ordenagailuaren Aukera:" />
 
-     
+        <!--  Ordenagailuaren aukera erakusteko irudia  -->
         <Image
             x:Name="ComputerChoiceImage"
             HeightRequest="100"
             HorizontalOptions="Center"
             WidthRequest="100" />
 
+        <!--  Erabiltzailearen puntuazioa erakusteko etiketa  -->
         <Label
             x:Name="PlayerScoreLabel"
             FontSize="20"
             HorizontalOptions="Center"
             Text="Erabiltzailearen puntuak: 0" />
+        <!--  Ordenagailuaren puntuazioa erakusteko etiketa  -->
         <Label
             x:Name="ComputerScoreLabel"
             FontSize="20"
             HorizontalOptions="Center"
             Text="Ordenagailuaren Puntuak: 0" />
 
+        <!--  Jokoa amaitzeko botoia  -->
         <Button
             Clicked="OnFinishButtonClicked"
             HorizontalOptions="Center"
